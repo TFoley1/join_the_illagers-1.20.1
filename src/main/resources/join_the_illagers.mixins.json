@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "net.tfoley.join_the_illagers.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

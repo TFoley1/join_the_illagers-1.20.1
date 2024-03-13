@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "join_the_illagers",
+	"version": "${version}",
+	"name": "join_the_illagers",
+	"description": "A mod which allows you to act as an illager/pillager. It gives you their abilities, weapons, and allows you to side with them.",
+	"authors": [
+		"tfoley1"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/join_the_illagers/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.tfoley.join_the_illagers.JoinTheIllagers"
+		],
+		"client": [
+			"net.tfoley.join_the_illagers.JoinTheIllagersClient"
+		],
+		"fabric-datagen": [
+			"net.tfoley.join_the_illagers.JoinTheIllagersDataGenerator"
+		]
+	},
+	"mixins": [
+		"join_the_illagers.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
