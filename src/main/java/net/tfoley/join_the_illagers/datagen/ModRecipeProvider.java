@@ -4,7 +4,9 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.ShapelessRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 import net.tfoley.join_the_illagers.block.ModBlocks;
@@ -24,7 +26,22 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         // ALLOW ABYSSIUM TO BE SMELTED DOWN TO SOMETHING (NUGGETS?)3
 
         // offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS,item, RecipeCategory.BUILDING_BLOCKS, block);
-        offerReversibleCompactingRecipes(exporter,RecipeCategory.BUILDING_BLOCKS, ModItems.ABYSSIUM_INGOT,RecipeCategory.BUILDING_BLOCKS, ModBlocks.ABYSSIUM);
+
+        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC, ModItems.ABYSSIUM_INGOT,RecipeCategory.BUILDING_BLOCKS, ModBlocks.ABYSSIUM);
+
+        // Breaks when you do more than one, need a shaped recipe instead?
+        // offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC, ModItems.ABYSSIUM_NUGGET,RecipeCategory.MISC, ModItems.ABYSSIUM_INGOT);
+
+//        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.ABYSSIUM_INGOT,1)
+//                .pattern("###")
+//                .pattern("###")
+//                .pattern("###")
+//                .input('#', ModItems.ABYSSIUM_NUGGET)
+//                .criterion(hasItem(ModItems.ABYSSIUM_NUGGET), conditionsFromItem(ModItems.ABYSSIUM_NUGGET))
+//                .criterion(hasItem(ModItems.ABYSSIUM_INGOT), conditionsFromItem(ModItems.ABYSSIUM_INGOT))
+//                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ABYSSIUM_INGOT)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ABYSSIUM_INGOT, 9);
 
 
 

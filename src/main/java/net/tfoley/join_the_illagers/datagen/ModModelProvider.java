@@ -24,6 +24,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         // itemModelGenerator.register(ModItems.item,Models.GENERATED);
         itemModelGenerator.register(ModItems.ABYSSIUM_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ABYSSIUM_NUGGET, Models.GENERATED);
         itemModelGenerator.register(ModItems.PRISM, Models.GENERATED);
         itemModelGenerator.register(ModItems.COPPERBOUND_PRISM, Models.GENERATED);
         itemModelGenerator.register(ModItems.FANG_SPELL_ITEM, Models.GENERATED);

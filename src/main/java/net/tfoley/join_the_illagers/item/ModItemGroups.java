@@ -21,6 +21,7 @@ public class ModItemGroups extends ItemGroups {
 
                         entries.add(ModBlocks.ABYSSIUM);
                         entries.add(ModItems.ABYSSIUM_INGOT);
+                        entries.add(ModItems.ABYSSIUM_NUGGET);
 
 
                         entries.add(ModItems.PRISM);

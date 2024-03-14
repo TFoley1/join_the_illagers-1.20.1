@@ -2,75 +2,47 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": {
-        "type": "minecraft:uniform",
-        "min": 3,
-        "max": 7
-      },
+      "rolls": 1,
+      "bonus_rolls": 0,
       "entries": [
         {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:enchanted_golden_apple"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:totem_of_undying"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 5,
-          "name": "minecraft:enchanted_book",
-          "functions": [
+          "type": "minecraft:alternatives",
+          "children": [
             {
-              "function": "minecraft:enchant_randomly",
-              "enchantments": [
-                "minecraft:efficiency",
-                "minecraft:feather_falling",
-                "minecraft:fortune",
-                "minecraft:frost_walker",
-                "minecraft:knockback",
-                "minecraft:piercing",
-                "minecraft:sharpness",
-                "minecraft:thorns",
-                "minecraft:unbreaking",
-                "minecraft:binding_curse",
-                "minecraft:flame",
-                "minecraft:aqua_affinity",
-                "minecraft:fire_protection",
-                "minecraft:projectile_protection",
-                "minecraft:protection",
-                "minecraft:power",
-                "minecraft:punch"
+              "type": "minecraft:item",
+              "name": "join_the_illagers:abyssium",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "join_the_illagers:abyssium_nugget",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "min": 2,
+                    "max": 6
+                  },
+                  "add": true
+                }
               ]
             }
           ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 10,
-          "name": "minecraft:experience_bottle"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 20,
-          "name": "minecraft:iron_ingot"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 20,
-          "name": "minecraft:gold_ingot"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 30,
-          "name": "minecraft:emerald"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 60,
-          "name": "minecraft:lapis_lazuli"
         }
       ]
     }

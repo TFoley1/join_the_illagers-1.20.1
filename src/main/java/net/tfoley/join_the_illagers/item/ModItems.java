@@ -18,6 +18,7 @@ import net.tfoley.join_the_illagers.item.custom.FangSpellItem;
 public class ModItems {
 
     public static final Item ABYSSIUM_INGOT = registerItem("abyssium_ingot",new Item(new FabricItemSettings()));
+    public static final Item ABYSSIUM_NUGGET = registerItem("abyssium_nugget",new Item(new FabricItemSettings()));
     public static final Item PRISM = registerItem("prism",new Item(new FabricItemSettings().rarity(Rarity.EPIC)));
     public static final Item COPPERBOUND_PRISM = registerItem("copperbound_prism",new Item(new FabricItemSettings().rarity(Rarity.EPIC)));
 

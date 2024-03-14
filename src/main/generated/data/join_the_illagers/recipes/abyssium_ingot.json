@@ -1,13 +1,18 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "minecraft:crafting_shaped",
   "category": "building",
-  "ingredients": [
-    {
-      "item": "join_the_illagers:abyssium"
+  "key": {
+    "#": {
+      "item": "join_the_illagers:abyssium_nugget"
     }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
   ],
   "result": {
-    "count": 9,
     "item": "join_the_illagers:abyssium_ingot"
-  }
+  },
+  "show_notification": true
 }

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "join_the_illagers:abyssium_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "join_the_illagers:abyssium_nugget"
+  }
+}

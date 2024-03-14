@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLootTableProvider;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.tfoley.join_the_illagers.block.ModBlocks;
+import net.tfoley.join_the_illagers.item.ModItems;
 
 public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public ModLootTableProvider(FabricDataOutput dataOutput) {
@@ -14,8 +15,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         //addDrop(*insert block*);
-        addDrop(ModBlocks.ABYSSIUM);
-
+        // addDrop(ModBlocks.ABYSSIUM);
+        oreDrops(ModBlocks.ABYSSIUM, ModItems.ABYSSIUM_NUGGET);
 
     }
 }

@@ -1,9 +1,9 @@
-// 1.20.1	2024-03-13T21:30:53.343399	join_the_illagers/Recipes
+// 1.20.1	2024-03-14T17:20:16.1839137	join_the_illagers/Recipes
 283bfc9754b86cc9c0bc3198c073da0d08f12e15 data\join_the_illagers\recipes\fang_spell_item.json
-f8aab649bfd3fdc8d5366ed2947ed441b923d4d3 data\join_the_illagers\advancements\recipes\building_blocks\abyssium_ingot.json
 b0c797d91eac6e9b93b5345b60dda8c86fd611eb data\join_the_illagers\recipes\copperbound_prism.json
 715aba34957d1a626d343d9ccfcf5a35d234b1da data\join_the_illagers\advancements\recipes\building_blocks\abyssium.json
-4dec19320a7aca096d9b889ffca257fa50ec28a0 data\join_the_illagers\recipes\abyssium_ingot.json
+bea1773ed4b5828314b89fce7bd676d5626688e1 data\join_the_illagers\recipes\abyssium_ingot.json
 b107d80a9d8e577ad892a0af1acb45fc1152b92c data\join_the_illagers\recipes\abyssium.json
+f8aab649bfd3fdc8d5366ed2947ed441b923d4d3 data\join_the_illagers\advancements\recipes\misc\abyssium_ingot.json
 d6ec403417e83892689c06f903600bb179063801 data\join_the_illagers\advancements\recipes\misc\copperbound_prism.json
 4143cc6aa6719bc57387b0594af74d9d8a92391b data\join_the_illagers\advancements\recipes\misc\fang_spell_item.json
