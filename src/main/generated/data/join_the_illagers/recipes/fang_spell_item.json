@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "D": {
+      "item": "minecraft:dragon_breath"
+    },
+    "E": {
+      "item": "minecraft:echo_shard"
+    },
+    "L": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "S": {
+      "item": "minecraft:soul_sand"
+    },
+    "T": {
+      "item": "minecraft:totem_of_undying"
+    },
+    "X": {
+      "item": "minecraft:experience_bottle"
+    }
+  },
+  "pattern": [
+    "ELS",
+    "XTD",
+    "/P/"
+  ],
+  "result": {
+    "item": "join_the_illagers:fang_spell_item"
+  },
+  "show_notification": true
+}

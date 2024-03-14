@@ -1,0 +1,12 @@
+{
+  "item.join_the_illagers.abyssium_ingot": "Abyssium Ingot",
+  "item.join_the_illagers.prism": "Prism",
+  "item.join_the_illagers.copperbound_prism": "Copper Bound Prism",
+  "item.join_the_illagers.fang_spell_item": "Fang Spell",
+
+  "block.join_the_illagers.abyssium": "Abyssium",
+
+  "tooltip.join_the_illagers.fang_spell.tooltip": "Allows you to use the Evoker's fang spell",
+
+  "itemgroup.illager": "Join The Illagers"
+}

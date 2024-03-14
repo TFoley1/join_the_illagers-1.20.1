@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "join_the_illagers:abyssium"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "join_the_illagers:abyssium_ingot"
+  }
+}
