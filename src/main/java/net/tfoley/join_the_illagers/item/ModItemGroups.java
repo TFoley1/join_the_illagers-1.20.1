@@ -26,8 +26,15 @@ public class ModItemGroups extends ItemGroups {
                         entries.add(ModItems.ABYSSIUM_INGOT);
                         entries.add(ModItems.ABYSSIUM_NUGGET);
                         entries.add(ModItems.ABYSSIUM_UPGRADE_TEMPLATE);
-
-
+                        entries.add(ModItems.ABYSSIUM_SWORD);
+                        entries.add(ModItems.ABYSSIUM_PICKAXE);
+                        entries.add(ModItems.ABYSSIUM_AXE);
+                        entries.add(ModItems.ABYSSIUM_SHOVEL);
+                        entries.add(ModItems.ABYSSIUM_HOE);
+                        entries.add(ModItems.ABYSSIUM_HELMET);
+                        entries.add(ModItems.ABYSSIUM_CHESTPLATE);
+                        entries.add(ModItems.ABYSSIUM_LEGGINGS);
+                        entries.add(ModItems.ABYSSIUM_BOOTS);
 
                         entries.add(ModItems.PRISM);
                         entries.add(ModItems.COPPERBOUND_PRISM);

@@ -3,11 +3,11 @@ package net.tfoley.join_the_illagers.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.minecraft.data.server.recipe.RecipeJsonProvider;
-import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
-import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.*;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.ShapelessRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
@@ -30,6 +30,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         // offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS,item, RecipeCategory.BUILDING_BLOCKS, block);
 
+        // New method that should create a recipe for new upgrade templates
+        offerNetheriteLikeUpgradeRecipe(exporter,Items.DIAMOND_PICKAXE,RecipeCategory.MISC, ModItems.ABYSSIUM_UPGRADE_TEMPLATE,ModItems.ABYSSIUM_INGOT,ModItems.ABYSSIUM_PICKAXE);
+        offerNetheriteLikeUpgradeRecipe(exporter,Items.DIAMOND_SWORD,RecipeCategory.MISC, ModItems.ABYSSIUM_UPGRADE_TEMPLATE,ModItems.ABYSSIUM_INGOT,ModItems.ABYSSIUM_SWORD);
+        offerNetheriteLikeUpgradeRecipe(exporter,Items.DIAMOND_AXE,RecipeCategory.MISC, ModItems.ABYSSIUM_UPGRADE_TEMPLATE,ModItems.ABYSSIUM_INGOT,ModItems.ABYSSIUM_AXE);
+        offerNetheriteLikeUpgradeRecipe(exporter,Items.DIAMOND_SHOVEL,RecipeCategory.MISC, ModItems.ABYSSIUM_UPGRADE_TEMPLATE,ModItems.ABYSSIUM_INGOT,ModItems.ABYSSIUM_SHOVEL);
+        offerNetheriteLikeUpgradeRecipe(exporter,Items.DIAMOND_HOE,RecipeCategory.MISC, ModItems.ABYSSIUM_UPGRADE_TEMPLATE,ModItems.ABYSSIUM_INGOT,ModItems.ABYSSIUM_HOE);
+        offerNetheriteLikeUpgradeRecipe(exporter,Items.DIAMOND_HELMET,RecipeCategory.MISC, ModItems.ABYSSIUM_UPGRADE_TEMPLATE,ModItems.ABYSSIUM_INGOT,ModItems.ABYSSIUM_HELMET);
+        offerNetheriteLikeUpgradeRecipe(exporter,Items.DIAMOND_CHESTPLATE,RecipeCategory.MISC, ModItems.ABYSSIUM_UPGRADE_TEMPLATE,ModItems.ABYSSIUM_INGOT,ModItems.ABYSSIUM_CHESTPLATE);
+        offerNetheriteLikeUpgradeRecipe(exporter,Items.DIAMOND_LEGGINGS,RecipeCategory.MISC, ModItems.ABYSSIUM_UPGRADE_TEMPLATE,ModItems.ABYSSIUM_INGOT,ModItems.ABYSSIUM_LEGGINGS);
+        offerNetheriteLikeUpgradeRecipe(exporter,Items.DIAMOND_BOOTS,RecipeCategory.MISC, ModItems.ABYSSIUM_UPGRADE_TEMPLATE,ModItems.ABYSSIUM_INGOT,ModItems.ABYSSIUM_BOOTS);
 
         // JUST IF HAS INGOT AND BLOCK
         // offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC, ModItems.ABYSSIUM_INGOT,RecipeCategory.BUILDING_BLOCKS, ModBlocks.ABYSSIUM);
@@ -97,6 +107,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.ABYSSIUM_UPGRADE_TEMPLATE)));
 
 
+    }
+
+    public static void offerNetheriteLikeUpgradeRecipe(Consumer<RecipeJsonProvider> exporter, Item input, RecipeCategory category,Item upgrade,Item ingot, Item result) {
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(upgrade), Ingredient.ofItems(input), Ingredient.ofItems(ingot), category, result).criterion("has_netherite_ingot", RecipeProvider.conditionsFromItem(ingot)).offerTo(exporter, RecipeProvider.getItemPath(result) + "_smithing");
     }
 
 }

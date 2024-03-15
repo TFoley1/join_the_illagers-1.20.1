@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "join_the_illagers:abyssium_ingot"
+  },
+  "base": {
+    "item": "minecraft:diamond_chestplate"
+  },
+  "result": {
+    "item": "join_the_illagers:abyssium_chestplate"
+  },
+  "template": {
+    "item": "join_the_illagers:abyssium_upgrade_template"
+  }
+}

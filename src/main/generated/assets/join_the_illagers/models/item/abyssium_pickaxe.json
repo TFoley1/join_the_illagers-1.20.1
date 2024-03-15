@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "join_the_illagers:item/abyssium_pickaxe"
+  }
+}

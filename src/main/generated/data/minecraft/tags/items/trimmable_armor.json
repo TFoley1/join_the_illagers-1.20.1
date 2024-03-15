@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "join_the_illagers:abyssium_helmet",
+    "join_the_illagers:abyssium_chestplate",
+    "join_the_illagers:abyssium_leggings",
+    "join_the_illagers:abyssium_boots"
+  ]
+}
