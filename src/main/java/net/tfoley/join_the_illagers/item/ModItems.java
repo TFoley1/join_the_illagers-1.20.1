@@ -19,10 +19,11 @@ public class ModItems {
 
     public static final Item ABYSSIUM_INGOT = registerItem("abyssium_ingot",new Item(new FabricItemSettings()));
     public static final Item ABYSSIUM_NUGGET = registerItem("abyssium_nugget",new Item(new FabricItemSettings()));
+    public static final Item RAW_ABYSSIUM = registerItem("raw_abyssium",new Item(new FabricItemSettings()));
+    public static final Item ABYSSIUM_UPGRADE_TEMPLATE = registerItem("abyssium_upgrade_template",new Item(new FabricItemSettings()));
+    public static final Item SWEET_BERRY_PIE = registerItem("sweet_berry_pie",new Item(new FabricItemSettings()));
     public static final Item PRISM = registerItem("prism",new Item(new FabricItemSettings().rarity(Rarity.EPIC)));
     public static final Item COPPERBOUND_PRISM = registerItem("copperbound_prism",new Item(new FabricItemSettings().rarity(Rarity.EPIC)));
-
-
     public static final Item FANG_SPELL_ITEM = registerItem("fang_spell_item", new FangSpellItem(new FabricItemSettings().rarity(Rarity.EPIC)));
 
 

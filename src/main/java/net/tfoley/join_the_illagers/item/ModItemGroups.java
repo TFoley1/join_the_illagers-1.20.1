@@ -20,13 +20,19 @@ public class ModItemGroups extends ItemGroups {
                     .icon(()-> new ItemStack(ModBlocks.ABYSSIUM)).entries((displayContext, entries) -> {
 
                         entries.add(ModBlocks.ABYSSIUM);
+                        entries.add(ModBlocks.BLOCK_OF_RAW_ABYSSIUM);
+                        entries.add(ModBlocks.ABYSSIUM_ORE);
+                        entries.add(ModItems.RAW_ABYSSIUM);
                         entries.add(ModItems.ABYSSIUM_INGOT);
                         entries.add(ModItems.ABYSSIUM_NUGGET);
+                        entries.add(ModItems.ABYSSIUM_UPGRADE_TEMPLATE);
+
 
 
                         entries.add(ModItems.PRISM);
                         entries.add(ModItems.COPPERBOUND_PRISM);
                         entries.add(ModItems.FANG_SPELL_ITEM);
+                        entries.add(ModItems.SWEET_BERRY_PIE);
 
 
 

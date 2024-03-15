@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "join_the_illagers:abyssium"
+      "item": "join_the_illagers:block_of_raw_abyssium"
     }
   ],
   "result": {
     "count": 9,
-    "item": "join_the_illagers:abyssium_ingot"
+    "item": "join_the_illagers:raw_abyssium"
   }
 }

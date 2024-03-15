@@ -1,3 +1,4 @@
+
 package net.tfoley.join_the_illagers.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -23,26 +24,26 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     public void generate(Consumer<RecipeJsonProvider> exporter) {
         // offerSmelting(exporter, ModItem or a List, RecipeCategory.MISC, Result, 0.7f (EXP) , 200 (# of ticks it takes to cook), "group");
 
-        // ALLOW ABYSSIUM TO BE SMELTED DOWN TO SOMETHING (NUGGETS?)3
+        // ALLOW ABYSSIUM TO BE SMELTED DOWN TO SOMETHING (NUGGETS?)
 
         // offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS,item, RecipeCategory.BUILDING_BLOCKS, block);
 
-        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC, ModItems.ABYSSIUM_INGOT,RecipeCategory.BUILDING_BLOCKS, ModBlocks.ABYSSIUM);
 
-        // Breaks when you do more than one, need a shaped recipe instead?
-        // offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC, ModItems.ABYSSIUM_NUGGET,RecipeCategory.MISC, ModItems.ABYSSIUM_INGOT);
+        // JUST IF HAS INGOT AND BLOCK
+        // offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC, ModItems.ABYSSIUM_INGOT,RecipeCategory.BUILDING_BLOCKS, ModBlocks.ABYSSIUM);
 
-//        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.ABYSSIUM_INGOT,1)
-//                .pattern("###")
-//                .pattern("###")
-//                .pattern("###")
-//                .input('#', ModItems.ABYSSIUM_NUGGET)
-//                .criterion(hasItem(ModItems.ABYSSIUM_NUGGET), conditionsFromItem(ModItems.ABYSSIUM_NUGGET))
-//                .criterion(hasItem(ModItems.ABYSSIUM_INGOT), conditionsFromItem(ModItems.ABYSSIUM_INGOT))
-//                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ABYSSIUM_INGOT)));
+        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,ModItems.RAW_ABYSSIUM, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOCK_OF_RAW_ABYSSIUM);
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ABYSSIUM_INGOT, 9);
+        // IF NUGGET, INGOT, AND BLOCK
+            // INGOT TO BLOCK... Supposed to be reversable? Does not  give block recipe
+            offerReversibleCompactingRecipesWithCompactingRecipeGroup(exporter, RecipeCategory.MISC, ModItems.ABYSSIUM_INGOT,
+                    RecipeCategory.BUILDING_BLOCKS, ModBlocks.ABYSSIUM,
+                    "abyssium_from_abyssium_ingot", "abyssium_ingot");
 
+            // NUGGET TO INGOT REVERSIBLE
+            offerReversibleCompactingRecipesWithCompactingRecipeGroup(exporter, RecipeCategory.MISC, ModItems.ABYSSIUM_NUGGET,
+                    RecipeCategory.BUILDING_BLOCKS, ModItems.ABYSSIUM_INGOT,
+                    "abyssium_ingot_from_abyssium_nugget", "abyssium_ingot");
 
 
         // SHAPED
@@ -71,5 +72,29 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.COPPER_INGOT), conditionsFromItem(Items.COPPER_INGOT))
                 .criterion(hasItem(ModItems.PRISM), conditionsFromItem(ModItems.PRISM))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.COPPERBOUND_PRISM)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD,ModItems.SWEET_BERRY_PIE,1)
+                .pattern("BSE")
+                .input('B', Items.SWEET_BERRIES)
+                .input('S', Items.SUGAR)
+                .input('E', Items.EGG)
+                .criterion(hasItem(Items.SWEET_BERRIES), conditionsFromItem(Items.SWEET_BERRIES))
+                .criterion(hasItem(Items.SUGAR), conditionsFromItem(Items.SUGAR))
+                .criterion(hasItem(Items.EGG), conditionsFromItem(Items.EGG))
+                .criterion(hasItem(ModItems.SWEET_BERRY_PIE), conditionsFromItem(ModItems.SWEET_BERRY_PIE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SWEET_BERRY_PIE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.ABYSSIUM_UPGRADE_TEMPLATE,2)
+                .pattern("DTD")
+                .pattern("DSD")
+                .pattern("DDD")
+                .input('D', Items.DIAMOND)
+                .input('S', Items.SCULK)
+                .input('T', ModItems.ABYSSIUM_UPGRADE_TEMPLATE)
+                .criterion(hasItem(ModItems.ABYSSIUM_UPGRADE_TEMPLATE), conditionsFromItem(ModItems.ABYSSIUM_UPGRADE_TEMPLATE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ABYSSIUM_UPGRADE_TEMPLATE)));
+
+
     }
+
 }

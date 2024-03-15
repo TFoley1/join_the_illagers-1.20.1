@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "abyssium_ingot",
+  "key": {
+    "#": {
+      "item": "join_the_illagers:abyssium_ingot"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "join_the_illagers:abyssium"
+  },
+  "show_notification": true
+}

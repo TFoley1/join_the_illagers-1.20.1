@@ -1,10 +1,17 @@
 {
   "item.join_the_illagers.abyssium_ingot": "Abyssium Ingot",
+  "item.join_the_illagers.abyssium_nugget": "Abyssium Nugget",
+  "item.join_the_illagers.raw_abyssium": "Raw Abyssium",
+  "item.join_the_illagers.abyssium_upgrade_template": "Abyssium Upgrade Template",
   "item.join_the_illagers.prism": "Prism",
   "item.join_the_illagers.copperbound_prism": "Copper Bound Prism",
   "item.join_the_illagers.fang_spell_item": "Fang Spell",
+  "item.join_the_illagers.sweet_berry_pie": "Sweet Berry Pie",
 
   "block.join_the_illagers.abyssium": "Abyssium",
+  "block.join_the_illagers.block_of_raw_abyssium": "Raw Abyssium",
+  "block.join_the_illagers.abyssium_ore": "Abyssium Ore",
+
 
   "tooltip.join_the_illagers.fang_spell.tooltip": "Allows you to use the Evoker's fang spell",
 

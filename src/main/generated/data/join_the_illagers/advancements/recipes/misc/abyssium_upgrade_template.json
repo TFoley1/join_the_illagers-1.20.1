@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_abyssium_ingot": {
+    "has_abyssium_upgrade_template": {
       "conditions": {
         "items": [
           {
             "items": [
-              "join_the_illagers:abyssium_ingot"
+              "join_the_illagers:abyssium_upgrade_template"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:abyssium"
+        "recipe": "minecraft:abyssium_upgrade_template"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_abyssium_ingot",
+      "has_abyssium_upgrade_template",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:abyssium"
+      "minecraft:abyssium_upgrade_template"
     ]
   },
   "sends_telemetry_event": false
