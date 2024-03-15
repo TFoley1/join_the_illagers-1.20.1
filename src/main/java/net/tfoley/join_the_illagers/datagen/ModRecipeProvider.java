@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.ShapelessRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
@@ -13,18 +14,19 @@ import net.minecraft.util.Identifier;
 import net.tfoley.join_the_illagers.block.ModBlocks;
 import net.tfoley.join_the_illagers.item.ModItems;
 
+import java.util.List;
 import java.util.function.Consumer;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
     }
-
+    private static List<ItemConvertible> ABYSSIUM_SMELTABLES = List.of(ModItems.RAW_ABYSSIUM, ModBlocks.ABYSSIUM_ORE);
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
         // offerSmelting(exporter, ModItem or a List, RecipeCategory.MISC, Result, 0.7f (EXP) , 200 (# of ticks it takes to cook), "group");
-
-        // ALLOW ABYSSIUM TO BE SMELTED DOWN TO SOMETHING (NUGGETS?)
+        offerSmelting(exporter, ABYSSIUM_SMELTABLES, RecipeCategory.MISC, ModItems.ABYSSIUM_INGOT, 0.7f,200,"Abyssium");
+        offerBlasting(exporter, ABYSSIUM_SMELTABLES, RecipeCategory.MISC, ModItems.ABYSSIUM_INGOT, 0.7f,100,"Abyssium");
 
         // offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS,item, RecipeCategory.BUILDING_BLOCKS, block);
 

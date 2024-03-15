@@ -23,7 +23,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ABYSSIUM_ORE)
         ;
 
-        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.ABYSSIUM)
                 .add(ModBlocks.BLOCK_OF_RAW_ABYSSIUM)
                 .add(ModBlocks.ABYSSIUM_ORE)

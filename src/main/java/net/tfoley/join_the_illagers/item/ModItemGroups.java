@@ -33,6 +33,7 @@ public class ModItemGroups extends ItemGroups {
                         entries.add(ModItems.COPPERBOUND_PRISM);
                         entries.add(ModItems.FANG_SPELL_ITEM);
                         entries.add(ModItems.SWEET_BERRY_PIE);
+                        entries.add(ModBlocks.LOOT_BLOCK);
 
 
 
