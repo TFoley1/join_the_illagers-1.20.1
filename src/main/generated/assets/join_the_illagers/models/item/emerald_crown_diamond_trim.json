@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "join_the_illagers:item/emerald_crown",
+    "layer1": "minecraft:trims/items/helmet_trim_diamond"
+  }
+}

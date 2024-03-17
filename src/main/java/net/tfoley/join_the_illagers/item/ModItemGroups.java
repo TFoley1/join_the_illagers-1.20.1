@@ -22,6 +22,8 @@ public class ModItemGroups extends ItemGroups {
                         entries.add(ModBlocks.ABYSSIUM);
                         entries.add(ModBlocks.BLOCK_OF_RAW_ABYSSIUM);
                         entries.add(ModBlocks.ABYSSIUM_ORE);
+                        entries.add(ModBlocks.LOOT_BLOCK);
+
                         entries.add(ModItems.RAW_ABYSSIUM);
                         entries.add(ModItems.ABYSSIUM_INGOT);
                         entries.add(ModItems.ABYSSIUM_NUGGET);
@@ -35,12 +37,15 @@ public class ModItemGroups extends ItemGroups {
                         entries.add(ModItems.ABYSSIUM_CHESTPLATE);
                         entries.add(ModItems.ABYSSIUM_LEGGINGS);
                         entries.add(ModItems.ABYSSIUM_BOOTS);
+                        entries.add(ModItems.EMERALD_CROWN);
 
                         entries.add(ModItems.PRISM);
                         entries.add(ModItems.COPPERBOUND_PRISM);
+                        entries.add(ModItems.VEX_SPELL_ITEM);
                         entries.add(ModItems.FANG_SPELL_ITEM);
                         entries.add(ModItems.SWEET_BERRY_PIE);
-                        entries.add(ModBlocks.LOOT_BLOCK);
+                        entries.add(ModItems.HONEY_GLAZED_CHICKEN);
+
 
 
 

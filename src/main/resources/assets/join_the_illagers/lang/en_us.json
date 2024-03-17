@@ -6,7 +6,9 @@
   "item.join_the_illagers.prism": "Prism",
   "item.join_the_illagers.copperbound_prism": "Copper Bound Prism",
   "item.join_the_illagers.fang_spell_item": "Fang Spell",
+  "item.join_the_illagers.vex_spell_item": "Vex Spell",
   "item.join_the_illagers.sweet_berry_pie": "Sweet Berry Pie",
+  "item.join_the_illagers.honey_glazed_chicken": "Honey Glazed Chicken",
 
   "item.join_the_illagers.abyssium_sword": "Abyssium Sword",
   "item.join_the_illagers.abyssium_pickaxe": "Abyssium Pickaxe",
@@ -17,6 +19,7 @@
   "item.join_the_illagers.abyssium_chestplate": "Abysium Chestplate",
   "item.join_the_illagers.abyssium_leggings": "Abyssium Leggings",
   "item.join_the_illagers.abyssium_boots": "Abyssium Boots",
+  "item.join_the_illagers.emerald_crown": "Emerald Crown",
 
   "block.join_the_illagers.abyssium": "Abyssium",
   "block.join_the_illagers.block_of_raw_abyssium": "Raw Abyssium",
@@ -26,6 +29,7 @@
 
   "tooltip.join_the_illagers.fang_spell.tooltip": "Allows you to use the Evoker's fang spell",
   "tooltip.join_the_illagers.abyssium_smithing_template.tooltip": "Use this on Diamond Equipment...",
+  "tooltip.join_the_illagers.vex_spell_tooltip": "Allows you to use the Evoker's vex spell",
 
   "itemgroup.illager": "Join The Illagers"
 }

@@ -1,6 +1,9 @@
+
 plugins {
+	id "com.modrinth.minotaur" version "2.+"
 	id 'fabric-loom' version '1.5-SNAPSHOT'
 	id 'maven-publish'
+
 }
 
 version = project.mod_version
@@ -63,6 +66,16 @@ jar {
 	from("LICENSE") {
 		rename { "${it}_${project.base.archivesName.get()}"}
 	}
+}
+
+modrinth {
+	token = 'mrp_URcrWwb1GhRAuENDoF8EIMy0XyvM9Xjf1NA6zOhnZOFyjrjhGqWUuCQwziyd' // Please use an environment variable for this! The default is `$MODRINTH_TOKEN`.
+	projectId = 'PPTLaefM' // The ID of your Modrinth project. Slugs will not work.
+	versionNumber = '0.1' // The (preferably SemVer) version of the mod. If not specified, it'll use the `version` declaration
+	versionName = 'Pre Release 1' // The version title. If not specified, it'll use the version number
+	uploadFile = remapJar // Tells Minotaur to use the remapped jar
+	gameVersions = ['1.20.1'] // An array of game versions the version supports
+	loaders = ['fabric'] // Self-explanatory.
 }
 
 // configure the maven publication

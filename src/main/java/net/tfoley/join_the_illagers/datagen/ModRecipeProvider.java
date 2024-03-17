@@ -9,6 +9,7 @@ import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.ShapelessRecipe;
+import net.minecraft.recipe.SpecialCraftingRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 import net.tfoley.join_the_illagers.block.ModBlocks;
@@ -29,6 +30,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerBlasting(exporter, ABYSSIUM_SMELTABLES, RecipeCategory.MISC, ModItems.ABYSSIUM_INGOT, 0.7f,100,"Abyssium");
 
         // offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS,item, RecipeCategory.BUILDING_BLOCKS, block);
+        // offerShapelessRecipe(exporter, Items.CHICKEN, Items.HONEY_BOTTLE, RecipeCategory.FOOD,ModItems.HONEY_GLAZED_CHICKEN);
 
         // New method that should create a recipe for new upgrade templates
         offerNetheriteLikeUpgradeRecipe(exporter,Items.DIAMOND_PICKAXE,RecipeCategory.MISC, ModItems.ABYSSIUM_UPGRADE_TEMPLATE,ModItems.ABYSSIUM_INGOT,ModItems.ABYSSIUM_PICKAXE);
@@ -56,7 +58,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             offerReversibleCompactingRecipesWithCompactingRecipeGroup(exporter, RecipeCategory.MISC, ModItems.ABYSSIUM_NUGGET,
                     RecipeCategory.BUILDING_BLOCKS, ModItems.ABYSSIUM_INGOT,
                     "abyssium_ingot_from_abyssium_nugget", "abyssium_ingot");
-
 
         // SHAPED
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FANG_SPELL_ITEM,1)
@@ -96,7 +97,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.SWEET_BERRY_PIE), conditionsFromItem(ModItems.SWEET_BERRY_PIE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.SWEET_BERRY_PIE)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.ABYSSIUM_UPGRADE_TEMPLATE,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD,ModItems.HONEY_GLAZED_CHICKEN,1)
+                .pattern("HC")
+                .input('C', Items.COOKED_CHICKEN)
+                .input('H', Items.HONEY_BOTTLE)
+                .criterion(hasItem(Items.COOKED_CHICKEN), conditionsFromItem(Items.COOKED_CHICKEN))
+                .criterion(hasItem(Items.HONEY_BOTTLE), conditionsFromItem(Items.HONEY_BOTTLE))
+                .criterion(hasItem(ModItems.HONEY_GLAZED_CHICKEN), conditionsFromItem(ModItems.HONEY_GLAZED_CHICKEN))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.HONEY_GLAZED_CHICKEN)));
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD,ModItems.ABYSSIUM_UPGRADE_TEMPLATE,2)
                 .pattern("DTD")
                 .pattern("DSD")
                 .pattern("DDD")

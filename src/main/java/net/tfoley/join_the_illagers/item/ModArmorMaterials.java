@@ -3,6 +3,7 @@ package net.tfoley.join_the_illagers.item;
 import net.minecraft.client.sound.Sound;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -11,7 +12,11 @@ import net.tfoley.join_the_illagers.JoinTheIllagers;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    ABYSSIUM("abyssium",23, new int[] {3,8,6,4},19, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,2f,0.1f,() -> Ingredient.ofItems(ModItems.ABYSSIUM_INGOT));
+    ABYSSIUM("abyssium",23, new int[] {3,8,6,4},19, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,2f,
+            0.1f,() -> Ingredient.ofItems(ModItems.ABYSSIUM_INGOT)),
+
+    EMERALD("emerald",23, new int[] {3,8,6,4},19, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,2f,
+            0.1f,() -> Ingredient.ofItems(Items.EMERALD));
 
     private final String name;
     private final int durabilityMultiplier;

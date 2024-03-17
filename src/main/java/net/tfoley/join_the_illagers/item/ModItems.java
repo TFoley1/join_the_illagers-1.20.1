@@ -15,6 +15,7 @@ import net.minecraft.util.Rarity;
 import net.tfoley.join_the_illagers.JoinTheIllagers;
 import net.tfoley.join_the_illagers.item.custom.FangSpellItem;
 import net.tfoley.join_the_illagers.item.custom.ModArmorItem;
+import net.tfoley.join_the_illagers.item.custom.VexSpellItem;
 
 public class ModItems {
 
@@ -27,6 +28,7 @@ public class ModItems {
 
     // FOOD ITEM
     public static final Item SWEET_BERRY_PIE = registerItem("sweet_berry_pie",new Item(new FabricItemSettings().food(ModFoodCompontents.SWEET_BERRY_PIE)));
+    public static final Item HONEY_GLAZED_CHICKEN = registerItem("honey_glazed_chicken",new Item(new FabricItemSettings().food(ModFoodCompontents.HONEY_GLAZED_CHICKEN)));
 
     // TOOLS, WEAPONS & ARMOR
     public static final Item ABYSSIUM_PICKAXE = registerItem("abyssium_pickaxe", new PickaxeItem(ModToolMaterial.ABYSSIUM, 2, -3.0f, new FabricItemSettings()));
@@ -40,9 +42,13 @@ public class ModItems {
     public static final Item ABYSSIUM_CHESTPLATE= registerItem("abyssium_chestplate", new ModArmorItem(ModArmorMaterials.ABYSSIUM, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item ABYSSIUM_LEGGINGS= registerItem("abyssium_leggings", new ModArmorItem(ModArmorMaterials.ABYSSIUM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item ABYSSIUM_BOOTS= registerItem("abyssium_boots", new ModArmorItem(ModArmorMaterials.ABYSSIUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
-    public static final Item PRISM = registerItem("prism",new Item(new FabricItemSettings().rarity(Rarity.EPIC)));
-    public static final Item COPPERBOUND_PRISM = registerItem("copperbound_prism",new Item(new FabricItemSettings().rarity(Rarity.EPIC)));
-    public static final Item FANG_SPELL_ITEM = registerItem("fang_spell_item", new FangSpellItem(new FabricItemSettings().rarity(Rarity.EPIC)));
+
+    // TODO CHANGE STACK SIZE TO ONE
+    public static final Item PRISM = registerItem("prism",new Item(new FabricItemSettings().rarity(Rarity.EPIC).maxCount(1)));
+    public static final Item COPPERBOUND_PRISM = registerItem("copperbound_prism",new Item(new FabricItemSettings().rarity(Rarity.EPIC).maxCount(1)));
+    public static final Item FANG_SPELL_ITEM = registerItem("fang_spell_item", new FangSpellItem(new FabricItemSettings().rarity(Rarity.EPIC).maxCount(1)));
+    public static final Item VEX_SPELL_ITEM = registerItem("vex_spell_item", new VexSpellItem(new FabricItemSettings().rarity(Rarity.EPIC).maxCount(1)));
+    public static final Item EMERALD_CROWN = registerItem("emerald_crown", new ModArmorItem(ModArmorMaterials.EMERALD, ArmorItem.Type.HELMET,new FabricItemSettings()));
 
 
     private static Item registerItem(String name, Item item) {
