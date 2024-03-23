@@ -1,0 +1,15 @@
+{
+  "name":"join_the_illagers:abandoned_pillager_silo",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "join_the_illagers:abandoned_pillager_silo",
+        "projection": "terrain_matching",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

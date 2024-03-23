@@ -31,5 +31,27 @@
   "tooltip.join_the_illagers.abyssium_smithing_template.tooltip": "Use this on Diamond Equipment...",
   "tooltip.join_the_illagers.vex_spell_tooltip": "Allows you to use the Evoker's vex spell",
 
-  "itemgroup.illager": "Join The Illagers"
+  "join_the_illagers:advancements.root.title": "Join The Illagers",
+  "join_the_illagers:advancements.raw_abyssium.title": "Fragmented",
+  "join_the_illagers:advancements.abyssium_ingot.title": "Forged From The Abyss",
+  "join_the_illagers:advancements.prism.title": "The Last?",
+  "join_the_illagers:advancements.copperbound_prism.title": "Certainly Not The Last!",
+  "join_the_illagers.advancements.abyssium_armor.title": "Fell Into The Abyss",
+  "join_the_illagers:advancements.emerald_crown.title": "Royalty",
+  "join_the_illagers:advancements.fang_spell_item.title": "Invoke Pain",
+  "join_the_illagers:advancements.vex_spell_item.title": "Invoke Suffering",
+
+  "join_the_illagers.advancements.found_silo.title": "That's a lot of hay...",
+
+  "join_the_illagers.advancements.found_silo.description": "Discovered a Pillager Silo",
+
+  "join_the_illagers:advancements.root.description": "A Journey Into an Evil World...",
+  "join_the_illagers:advancements.prism.description": "Find a prism",
+  "join_the_illagers:advancements.copperbound_prism.description": "Craft a Copperbound Prism",
+  "join_the_illagers.advancements.abyssium_armor.description": "Forged a Full Set of Abyssium",
+  "join_the_illagers:advancements.emerald_crown.description": "Find an Emerald Crown",
+  "join_the_illagers:advancements.fang_spell_item.description": "Craft Fang Spell",
+  "join_the_illagers:advancements.vex_spell_item.description": "Craft Vex Spell",
+
+  "itemgroup.illager": "Join The Illagers!"
 }

@@ -1,0 +1,40 @@
+{
+  "display": {
+      "icon": {
+          "item": "minecraft:hay_block"
+      },
+      "title": {
+        "translate": "join_the_illagers.advancements.found_silo.title"
+      },
+      "description": {
+        "translate": "join_the_illagers.advancements.found_silo.description"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+  },
+  "criteria": {
+    "pillager_silo": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "position": {
+              "x": {
+                "min": -15,
+                "max": 15
+              }
+            },
+            "structure": "join_the_illagers:pillager_silo"
+          }
+        }
+      }
+    }
+  },
+  "requirements": 
+  [
+    ["pillager_silo"]
+  ],
+  "parent":"join_the_illagers:join_the_illagers_advancements/root"
+}

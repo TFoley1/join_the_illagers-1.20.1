@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "fang_spell": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "join_the_illagers:fang_spell_item"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+      "icon": {
+          "item": "join_the_illagers:fang_spell_item"
+      },
+    "title": {
+      "translate": "join_the_illagers:advancements.fang_spell_item.title"
+    },
+    "description": {
+      "translate": "join_the_illagers:advancements.fang_spell_item.description"
+    },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "requirements": 
+  [
+    ["fang_spell"]
+  ],
+  "parent":"join_the_illagers:join_the_illagers_advancements/root"
+}

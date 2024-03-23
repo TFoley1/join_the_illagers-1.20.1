@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "crown": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "join_the_illagers:emerald_crown"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+      "icon": {
+          "item": "join_the_illagers:emerald_crown"
+      },
+    "title": {
+      "translate": "join_the_illagers:advancements.emerald_crown.title"
+    },
+    "description": {
+      "translate": "join_the_illagers:advancements.emerald_crown.description"
+    },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+  },
+  "requirements": 
+  [
+    ["crown"]
+  ],
+  "parent":"join_the_illagers:join_the_illagers_advancements/root"
+}

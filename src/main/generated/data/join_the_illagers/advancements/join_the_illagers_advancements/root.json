@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "item": "join_the_illagers:fang_spell_item"
+    },
+    "title": {
+      "translate": "join_the_illagers:advancements.root.title"
+    },
+    "description": {
+      "translate": "join_the_illagers:advancements.root.description"
+    },
+    "background": "join_the_illagers:textures/block/abyssium.png",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "crafting_table": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:crafting_table"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "crafting_table"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
