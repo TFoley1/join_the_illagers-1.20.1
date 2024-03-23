@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "abyssium": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "join_the_illagers:abyssium_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+      "icon": {
+          "item": "join_the_illagers:abyssium_ingot"
+      },
+    "title": {
+      "translate": "join_the_illagers:advancements.forged_abyssium.title"
+    },
+    "description": {
+      "translate": "join_the_illagers:advancements.forged_abyssium.description"
+    },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "requirements": 
+  [
+    ["abyssium"]
+  ],
+  "parent":"join_the_illagers:join_the_illagers_advancements/found_abyss"
+}

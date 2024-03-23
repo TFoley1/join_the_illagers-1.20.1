@@ -1,44 +1,5 @@
 {
-  "display": {
-    "icon": {
-      "item": "join_the_illagers:abyssium_chestplate"
-    },
-    "title": {
-      "translate": "join_the_illagers.advancements.abyssium_armor.title"
-    },
-    "description": {
-      "translate": "join_the_illagers.advancements.abyssium_armor.description"
-    },
-    "frame": "task",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": true
-  },
   "criteria": {
-    "abyssium_boots": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "join_the_illagers:abyssium_boots"
-            ]
-          }
-        ]
-      }
-    },
-    "abyssium_chestplate": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "join_the_illagers:abyssium_chestplate"
-            ]
-          }
-        ]
-      }
-    },
     "abyssium_helmet": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
@@ -51,6 +12,18 @@
         ]
       }
     },
+  "abyssium_chestplate": {
+    "trigger": "minecraft:inventory_changed",
+    "conditions": {
+      "items": [
+        {
+          "items": [
+            "join_the_illagers:abyssium_chestplate"
+          ]
+        }
+      ]
+    }
+  },
     "abyssium_leggings": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
@@ -62,9 +35,37 @@
           }
         ]
       }
+    },
+    "abyssium_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "join_the_illagers:abyssium_boots"
+            ]
+          }
+        ]
+      }
     }
+},
+  "display": {
+      "icon": {
+          "item": "join_the_illagers:abyssium_chestplate"
+      },
+    "title": {
+      "translate": "join_the_illagers:advancements.forged_abyssium_armor.title"
+    },
+    "description": {
+      "translate": "join_the_illagers:advancements.forged_abyssium_armor.description"
+    },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
   },
-  "requirements": [
+  "requirements": 
+  [
     [
       "abyssium_helmet",
       "abyssium_chestplate",
@@ -72,5 +73,5 @@
       "abyssium_boots"
     ]
   ],
-  "parent":"join_the_illagers:join_the_illagers_advancements/forged_abyssium_ingot"
+  "parent":"join_the_illagers:join_the_illagers_advancements/forged_abyssium"
 }

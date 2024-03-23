@@ -22,6 +22,7 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
 
 
 
+
     }
 }
 

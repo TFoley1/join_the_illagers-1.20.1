@@ -1,7 +1,6 @@
 package net.tfoley.join_the_illagers.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.ItemStack;
@@ -20,11 +19,9 @@ public class ModItemGroups extends ItemGroups {
                     .icon(()-> new ItemStack(ModBlocks.ABYSSIUM)).entries((displayContext, entries) -> {
 
                         entries.add(ModBlocks.ABYSSIUM);
-                        entries.add(ModBlocks.BLOCK_OF_RAW_ABYSSIUM);
-                        entries.add(ModBlocks.ABYSSIUM_ORE);
                         entries.add(ModBlocks.LOOT_BLOCK);
 
-                        entries.add(ModItems.RAW_ABYSSIUM);
+                        entries.add(ModItems.ABYSS);
                         entries.add(ModItems.ABYSSIUM_INGOT);
                         entries.add(ModItems.ABYSSIUM_NUGGET);
                         entries.add(ModItems.ABYSSIUM_UPGRADE_TEMPLATE);
@@ -43,13 +40,9 @@ public class ModItemGroups extends ItemGroups {
                         entries.add(ModItems.COPPERBOUND_PRISM);
                         entries.add(ModItems.VEX_SPELL_ITEM);
                         entries.add(ModItems.FANG_SPELL_ITEM);
+                        entries.add(ModItems.SOUL);
                         entries.add(ModItems.SWEET_BERRY_PIE);
                         entries.add(ModItems.HONEY_GLAZED_CHICKEN);
-
-
-
-
-
 
 
                     }).build());

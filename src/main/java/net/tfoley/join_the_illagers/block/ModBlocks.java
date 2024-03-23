@@ -28,10 +28,6 @@ public class ModBlocks {
     public static final Block ABYSSIUM = registerBlock("abyssium",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.GLOWSTONE).strength(4f).sounds(BlockSoundGroup.NETHERITE), UniformIntProvider.create(4,7)));
 
-    public static final Block ABYSSIUM_ORE = registerBlock("abyssium_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.COPPER_ORE).strength(4f).sounds(BlockSoundGroup.STONE),UniformIntProvider.create(4,7)));
-    public static final Block BLOCK_OF_RAW_ABYSSIUM = registerBlock("block_of_raw_abyssium",
-            new Block(FabricBlockSettings.copyOf(Blocks.RAW_COPPER_BLOCK).strength(4f).sounds(BlockSoundGroup.NETHERITE)));
 
     public static void registerModBlocks() {
         JoinTheIllagers.LOGGER.info("Registering ModBlocks for " + JoinTheIllagers.MOD_ID);

@@ -19,14 +19,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         // ADD BLOCKS WITH TAGS NEEDED BELOW
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.ABYSSIUM)
-                .add(ModBlocks.BLOCK_OF_RAW_ABYSSIUM)
-                .add(ModBlocks.ABYSSIUM_ORE)
         ;
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.ABYSSIUM)
-                .add(ModBlocks.BLOCK_OF_RAW_ABYSSIUM)
-                .add(ModBlocks.ABYSSIUM_ORE)
         ;
     }
 }

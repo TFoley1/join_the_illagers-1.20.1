@@ -8,8 +8,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.recipe.ShapelessRecipe;
-import net.minecraft.recipe.SpecialCraftingRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 import net.tfoley.join_the_illagers.block.ModBlocks;
@@ -22,12 +20,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
     }
-    private static List<ItemConvertible> ABYSSIUM_SMELTABLES = List.of(ModItems.RAW_ABYSSIUM, ModBlocks.ABYSSIUM_ORE);
+
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
         // offerSmelting(exporter, ModItem or a List, RecipeCategory.MISC, Result, 0.7f (EXP) , 200 (# of ticks it takes to cook), "group");
-        offerSmelting(exporter, ABYSSIUM_SMELTABLES, RecipeCategory.MISC, ModItems.ABYSSIUM_INGOT, 0.7f,200,"Abyssium");
-        offerBlasting(exporter, ABYSSIUM_SMELTABLES, RecipeCategory.MISC, ModItems.ABYSSIUM_INGOT, 0.7f,100,"Abyssium");
+
 
         // offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS,item, RecipeCategory.BUILDING_BLOCKS, block);
         // offerShapelessRecipe(exporter, Items.CHICKEN, Items.HONEY_BOTTLE, RecipeCategory.FOOD,ModItems.HONEY_GLAZED_CHICKEN);
@@ -45,8 +42,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         // JUST IF HAS INGOT AND BLOCK
         // offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC, ModItems.ABYSSIUM_INGOT,RecipeCategory.BUILDING_BLOCKS, ModBlocks.ABYSSIUM);
-
-        offerReversibleCompactingRecipes(exporter,RecipeCategory.MISC,ModItems.RAW_ABYSSIUM, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOCK_OF_RAW_ABYSSIUM);
 
         // IF NUGGET, INGOT, AND BLOCK
             // INGOT TO BLOCK... Supposed to be reversable? Does not  give block recipe

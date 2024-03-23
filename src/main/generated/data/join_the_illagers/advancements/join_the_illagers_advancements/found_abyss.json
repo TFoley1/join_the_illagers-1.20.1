@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "abyss": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "join_the_illagers:abyss"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+      "icon": {
+          "item": "join_the_illagers:abyss"
+      },
+    "title": {
+      "translate": "join_the_illagers:advancements.found_abyss.title"
+    },
+    "description": {
+      "translate": "join_the_illagers:advancements.found_abyss.description"
+    },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "requirements": 
+  [
+    ["abyss"]
+  ],
+  "parent":"join_the_illagers:join_the_illagers_advancements/root"
+}

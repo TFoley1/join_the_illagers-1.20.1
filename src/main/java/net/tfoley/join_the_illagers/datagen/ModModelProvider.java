@@ -18,8 +18,6 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         // blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.item);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ABYSSIUM);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_RAW_ABYSSIUM);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ABYSSIUM_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LOOT_BLOCK);
 
     }
@@ -29,7 +27,7 @@ public class ModModelProvider extends FabricModelProvider {
         // itemModelGenerator.register(ModItems.item,Models.GENERATED);
         itemModelGenerator.register(ModItems.ABYSSIUM_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.ABYSSIUM_NUGGET, Models.GENERATED);
-        itemModelGenerator.register(ModItems.RAW_ABYSSIUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ABYSS, Models.GENERATED);
         itemModelGenerator.register(ModItems.ABYSSIUM_UPGRADE_TEMPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.ABYSSIUM_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ABYSSIUM_PICKAXE, Models.HANDHELD);

@@ -2,12 +2,8 @@ package net.tfoley.join_the_illagers.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricLootTableProvider;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
-import net.fabricmc.fabric.api.loot.v2.FabricLootTableBuilder;
 import net.minecraft.block.Block;
 import net.minecraft.data.server.loottable.BlockLootTableGenerator;
-import net.minecraft.data.server.loottable.LootTableProvider;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
@@ -37,9 +33,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 //        oreDrops(ModBlocks.ABYSSIUM, ModItems.ABYSSIUM_NUGGET);
 
 
-        addDrop(ModBlocks.BLOCK_OF_RAW_ABYSSIUM);
         addDrop(ModBlocks.ABYSSIUM,copperLikeOreDrops(ModBlocks.ABYSSIUM, ModItems.ABYSSIUM_NUGGET));
-        addDrop(ModBlocks.ABYSSIUM_ORE,copperLikeOreDrops(ModBlocks.ABYSSIUM_ORE, ModItems.RAW_ABYSSIUM));
         // addDrop(ModBlocks.LOOT_BLOCK,); NOTE FIND WAY TO KEEP ALREADY EXISTING LOOT TABLE OR GENERATE SAME/SIMILAR ONE
 
     }

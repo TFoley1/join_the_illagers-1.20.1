@@ -1,12 +1,9 @@
 package net.tfoley.join_the_illagers.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.item.v1.FabricItemStack;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.inventory.Inventory;
 import net.minecraft.item.*;
-import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -23,7 +20,8 @@ public class ModItems {
     // MATERIALS
     public static final Item ABYSSIUM_INGOT = registerItem("abyssium_ingot",new Item(new FabricItemSettings()));
     public static final Item ABYSSIUM_NUGGET = registerItem("abyssium_nugget",new Item(new FabricItemSettings()));
-    public static final Item RAW_ABYSSIUM = registerItem("raw_abyssium",new Item(new FabricItemSettings()));
+    public static final Item ABYSS = registerItem("abyss",new Item(new FabricItemSettings()));
+    public static final Item SOUL = registerItem("soul",new Item(new FabricItemSettings()));
     public static final Item ABYSSIUM_UPGRADE_TEMPLATE = registerItem("abyssium_upgrade_template",new ItemWithTooltip(new FabricItemSettings(), Text.translatable("tooltip.join_the_illagers.abyssium_smithing_template.tooltip")));
 
     // FOOD ITEM
