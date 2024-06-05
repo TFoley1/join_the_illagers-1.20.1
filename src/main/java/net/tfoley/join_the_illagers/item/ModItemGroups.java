@@ -22,6 +22,7 @@ public class ModItemGroups extends ItemGroups {
                         entries.add(ModBlocks.LOOT_BLOCK);
 
                         entries.add(ModItems.ABYSS);
+                        entries.add(ModItems.ABYSSIUM);
                         entries.add(ModItems.ABYSSIUM_INGOT);
                         entries.add(ModItems.ABYSSIUM_NUGGET);
                         entries.add(ModItems.ABYSSIUM_UPGRADE_TEMPLATE);

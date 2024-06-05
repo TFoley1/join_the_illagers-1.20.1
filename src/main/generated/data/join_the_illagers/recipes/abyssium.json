@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "join_the_illagers:abyss"
+    },
+    "S": {
+      "item": "join_the_illagers:soul"
+    }
+  },
+  "pattern": [
+    "AA",
+    "SA"
+  ],
+  "result": {
+    "item": "join_the_illagers:abyssium"
+  },
+  "show_notification": true
+}

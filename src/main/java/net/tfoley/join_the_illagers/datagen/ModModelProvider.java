@@ -28,6 +28,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ABYSSIUM_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.ABYSSIUM_NUGGET, Models.GENERATED);
         itemModelGenerator.register(ModItems.ABYSS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ABYSSIUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.ABYSSIUM_UPGRADE_TEMPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.ABYSSIUM_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ABYSSIUM_PICKAXE, Models.HANDHELD);

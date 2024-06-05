@@ -18,8 +18,8 @@ import java.util.Map;
 public class ModArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
-                    .put(ModArmorMaterials.ABYSSIUM, new StatusEffectInstance(StatusEffects.SPEED, 400, 1, false, false, true))
-                    .put(ModArmorMaterials.EMERALD, new StatusEffectInstance(StatusEffects.HERO_OF_THE_VILLAGE, 400, 1, false, false, true)).build();
+                    .put(ModArmorMaterials.ABYSSIUM, new StatusEffectInstance(StatusEffects.SPEED, 400, 0, false, false, true))
+                    .put(ModArmorMaterials.EMERALD, new StatusEffectInstance(StatusEffects.HERO_OF_THE_VILLAGE, 400, 0, false, false, true)).build();
 
     public ModArmorItem(ArmorMaterial material, Type type, Settings settings) {
         super(material, type, settings);

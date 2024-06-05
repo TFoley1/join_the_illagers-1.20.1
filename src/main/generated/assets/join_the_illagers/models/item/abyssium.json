@@ -1,3 +1,6 @@
 {
-  "parent": "join_the_illagers:block/abyssium"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "join_the_illagers:item/abyssium"
+  }
 }

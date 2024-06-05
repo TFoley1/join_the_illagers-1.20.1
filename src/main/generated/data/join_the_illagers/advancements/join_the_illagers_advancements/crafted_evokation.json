@@ -1,0 +1,50 @@
+{
+  "criteria": {
+    "vex": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "join_the_illagers:vex_spell_item"
+            ]
+          }
+        ]
+      }
+    },
+    "fang": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "join_the_illagers:fang_spell_item"
+            ]
+          }
+        ]
+      }
+    },
+    "display": {
+      "icon": {
+        "item": "join_the_illagers:vex_spell_item"
+      },
+      "title": {
+        "translate": "join_the_illagers:advancements.crafted_evokation.title"
+      },
+      "description": {
+        "translate": "join_the_illagers:advancements.crafted_evokation.description"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "requirements": [
+      [
+        "vex",
+        "fang"
+      ]
+    ],
+    "parent":"join_the_illagers:join_the_illagers_advancements/root"
+  }
+}

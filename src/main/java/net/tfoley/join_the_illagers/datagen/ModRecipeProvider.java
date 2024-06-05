@@ -21,10 +21,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         super(output);
     }
 
+    private static final List<ItemConvertible> ABYSS_SMELTABLES = List.of(ModItems.ABYSS);
+
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
         // offerSmelting(exporter, ModItem or a List, RecipeCategory.MISC, Result, 0.7f (EXP) , 200 (# of ticks it takes to cook), "group");
 
+        offerSmelting(exporter, ABYSS_SMELTABLES , RecipeCategory.MISC, ModItems.ABYSSIUM_INGOT, 1f, 200, "abyss");
 
         // offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS,item, RecipeCategory.BUILDING_BLOCKS, block);
         // offerShapelessRecipe(exporter, Items.CHICKEN, Items.HONEY_BOTTLE, RecipeCategory.FOOD,ModItems.HONEY_GLAZED_CHICKEN);
@@ -112,7 +115,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.ABYSSIUM_UPGRADE_TEMPLATE), conditionsFromItem(ModItems.ABYSSIUM_UPGRADE_TEMPLATE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.ABYSSIUM_UPGRADE_TEMPLATE)));
 
-
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.ABYSSIUM,1)
+                .pattern("AA")
+                .pattern("SA")
+                .input('A', ModItems.ABYSS)
+                .input('S', ModItems.SOUL)
+                .criterion(hasItem(ModItems.ABYSS), conditionsFromItem(ModItems.ABYSS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ABYSSIUM)));
     }
 
     public static void offerNetheriteLikeUpgradeRecipe(Consumer<RecipeJsonProvider> exporter, Item input, RecipeCategory category,Item upgrade,Item ingot, Item result) {

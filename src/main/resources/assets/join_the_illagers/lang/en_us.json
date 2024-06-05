@@ -2,11 +2,12 @@
   "item.join_the_illagers.abyssium_ingot": "Abyssium Ingot",
   "item.join_the_illagers.abyssium_nugget": "Abyssium Nugget",
   "item.join_the_illagers.abyss": "Abyss",
+  "item.join_the_illagers.abyssium": "Abyssium",
   "item.join_the_illagers.abyssium_upgrade_template": "Smithing Template",
   "item.join_the_illagers.prism": "Prism",
   "item.join_the_illagers.copperbound_prism": "Copper Bound Prism",
-  "item.join_the_illagers.fang_spell_item": "Fang Spell",
-  "item.join_the_illagers.vex_spell_item": "Vex Spell",
+  "item.join_the_illagers.fang_spell_item": "Fang Evokation",
+  "item.join_the_illagers.vex_spell_item": "Vex Evokation",
   "item.join_the_illagers.sweet_berry_pie": "Sweet Berry Pie",
   "item.join_the_illagers.honey_glazed_chicken": "Honey Glazed Chicken",
   "item.join_the_illagers.soul": "Soul",
@@ -37,8 +38,7 @@
   "join_the_illagers:advancements.copperbound_prism.title": "Certainly Not The Last!",
   "join_the_illagers:advancements.forged_abyssium_armor.title": "Fell Into The Abyss",
   "join_the_illagers:advancements.emerald_crown.title": "Royalty",
-  "join_the_illagers:advancements.fang_spell_item.title": "Invoke Pain",
-  "join_the_illagers:advancements.vex_spell_item.title": "Invoke Suffering",
+  "join_the_illagers:advancements.crafted_evokation.title": "Evoken",
 
   "join_the_illagers.advancements.found_silo.title": "That's a lot of hay...",
 
@@ -49,10 +49,9 @@
   "join_the_illagers:advancements.found_abyss.description": "Find a piece of the Abyss",
   "join_the_illagers:advancements.copperbound_prism.description": "Craft a Copperbound Prism",
   "join_the_illagers:advancements.forged_abyssium.description": "Forged an Abyssium Ingot",
-  "join_the_illagers:advancements.forged_abyssium_armor.description": "Forged a Full Set of Abyssium",
+  "join_the_illagers:advancements.forged_abyssium_armor.description": "Forged Abyssium",
   "join_the_illagers:advancements.emerald_crown.description": "Find an Emerald Crown",
-  "join_the_illagers:advancements.fang_spell_item.description": "Craft Fang Spell",
-  "join_the_illagers:advancements.vex_spell_item.description": "Craft Vex Spell",
+  "join_the_illagers:advancements.crafted_evokation.description": "Craft an Evokation",
 
   "itemgroup.illager": "Join The Illagers!"
 }

@@ -25,7 +25,7 @@ public class ModBlocks {
 
     public static final Block LOOT_BLOCK = registerBlock("loot_block",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.GLOWSTONE).strength(2f).sounds(BlockSoundGroup.SCULK), UniformIntProvider.create(4,7)));
-    public static final Block ABYSSIUM = registerBlock("abyssium",
+    public static final Block ABYSSIUM = registerBlock("abyssium_block",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.GLOWSTONE).strength(4f).sounds(BlockSoundGroup.NETHERITE), UniformIntProvider.create(4,7)));
 
 

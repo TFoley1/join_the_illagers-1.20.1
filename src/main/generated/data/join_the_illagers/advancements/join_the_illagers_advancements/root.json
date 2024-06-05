@@ -9,7 +9,7 @@
     "description": {
       "translate": "join_the_illagers:advancements.root.description"
     },
-    "background": "join_the_illagers:textures/block/abyssium.png",
+    "background": "minecraft:textures/block/dark_oak_planks.png",
     "frame": "task",
     "show_toast": false,
     "announce_to_chat": false,

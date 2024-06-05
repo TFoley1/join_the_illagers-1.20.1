@@ -21,6 +21,7 @@ public class ModItems {
     public static final Item ABYSSIUM_INGOT = registerItem("abyssium_ingot",new Item(new FabricItemSettings()));
     public static final Item ABYSSIUM_NUGGET = registerItem("abyssium_nugget",new Item(new FabricItemSettings()));
     public static final Item ABYSS = registerItem("abyss",new Item(new FabricItemSettings()));
+    public static final Item ABYSSIUM = registerItem("abyssium",new Item(new FabricItemSettings()));
     public static final Item SOUL = registerItem("soul",new Item(new FabricItemSettings()));
     public static final Item ABYSSIUM_UPGRADE_TEMPLATE = registerItem("abyssium_upgrade_template",new ItemWithTooltip(new FabricItemSettings(), Text.translatable("tooltip.join_the_illagers.abyssium_smithing_template.tooltip")));
 

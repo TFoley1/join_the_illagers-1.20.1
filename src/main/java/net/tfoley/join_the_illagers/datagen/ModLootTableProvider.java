@@ -34,7 +34,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
 
         addDrop(ModBlocks.ABYSSIUM,copperLikeOreDrops(ModBlocks.ABYSSIUM, ModItems.ABYSSIUM_NUGGET));
-        // addDrop(ModBlocks.LOOT_BLOCK,); NOTE FIND WAY TO KEEP ALREADY EXISTING LOOT TABLE OR GENERATE SAME/SIMILAR ONE
+        addDrop(ModBlocks.LOOT_BLOCK); // NOTE FIND WAY TO KEEP ALREADY EXISTING LOOT TABLE OR GENERATE SAME/SIMILAR ONE
 
     }
 
