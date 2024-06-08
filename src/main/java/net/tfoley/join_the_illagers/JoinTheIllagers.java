@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.tfoley.join_the_illagers.block.ModBlocks;
 import net.tfoley.join_the_illagers.item.ModItemGroups;
 import net.tfoley.join_the_illagers.item.ModItems;
+import net.tfoley.join_the_illagers.util.ModLootTableModifiers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,5 +28,7 @@ public class JoinTheIllagers implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModLootTableModifiers.modifyLootTables();
 	}
 }

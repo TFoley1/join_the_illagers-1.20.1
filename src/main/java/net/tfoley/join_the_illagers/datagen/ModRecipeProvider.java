@@ -21,7 +21,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         super(output);
     }
 
-    private static final List<ItemConvertible> ABYSS_SMELTABLES = List.of(ModItems.ABYSS);
+    private static final List<ItemConvertible> ABYSS_SMELTABLES = List.of(ModItems.ABYSSIUM);
 
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {

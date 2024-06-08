@@ -1,0 +1,1 @@
+give @p bundle{Items:[{id:"minecraft:iron_ingot",Count:5},{id:"minecraft:emerald",Count:5},{id:"join_the_illagers:abyss",Count:8}],display:{Name:'Loot Bundle',Lore:['["",{"text":"A reward for your hard work!","italic":false}]']},Enchantments:[{}]}

@@ -36,6 +36,16 @@
         },
         {
           "type": "minecraft:item",
+          "weight": 5,
+          "name": "join_the_illagers:abyss"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "join_the_illagers:soul"
+        },
+        {
+          "type": "minecraft:item",
           "weight": 25,
           "name": "minecraft:gold_ingot"
         },

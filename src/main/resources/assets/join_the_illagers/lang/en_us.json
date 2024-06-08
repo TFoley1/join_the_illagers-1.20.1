@@ -2,6 +2,7 @@
   "item.join_the_illagers.abyssium_ingot": "Abyssium Ingot",
   "item.join_the_illagers.abyssium_nugget": "Abyssium Nugget",
   "item.join_the_illagers.abyss": "Abyss",
+  "item.join_the_illagers.abyssium_block": "Abyssium Block",
   "item.join_the_illagers.abyssium": "Abyssium",
   "item.join_the_illagers.abyssium_upgrade_template": "Smithing Template",
   "item.join_the_illagers.prism": "Prism",
@@ -23,7 +24,7 @@
   "item.join_the_illagers.abyssium_boots": "Abyssium Boots",
   "item.join_the_illagers.emerald_crown": "Emerald Crown",
 
-  "block.join_the_illagers.abyssium": "Abyssium",
+  "block.join_the_illagers.abyssium_block": "Abyssium",
   "block.join_the_illagers.loot_block": "Loot Block",
 
 
