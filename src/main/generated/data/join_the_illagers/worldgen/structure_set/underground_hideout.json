@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "join_the_illagers:underground_hideout",
+      "weight": 10
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 15,
+    "separation": 11,
+    "salt": 521990295
+  }
+}

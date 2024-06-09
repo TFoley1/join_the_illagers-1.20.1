@@ -1,8 +1,6 @@
 {
   "replace": false,
   "values": [
-    "join_the_illagers:abyssium",
-    "join_the_illagers:block_of_raw_abyssium",
-    "join_the_illagers:abyssium_ore"
+    "join_the_illagers:abyssium"
   ]
 }

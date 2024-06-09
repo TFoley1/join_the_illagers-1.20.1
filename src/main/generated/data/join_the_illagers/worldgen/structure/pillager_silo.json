@@ -2,7 +2,19 @@
   "type": "minecraft:jigsaw",
   "biomes": "plains",
   "step": "surface_structures",
-  "spawn_overrides": {},
+  "spawn_overrides": {
+    "monster": {
+      "bounding_box": "full",
+      "spawns": [
+        {
+          "type": "minecraft:pillager",
+          "weight": 1,
+          "minCount": 1,
+          "maxCount": 5
+        }
+      ]
+    }
+  },
   "terrain_adaptation": "beard_thin",
   "start_pool": "join_the_illagers:pillager_silo",
   "size": 1,

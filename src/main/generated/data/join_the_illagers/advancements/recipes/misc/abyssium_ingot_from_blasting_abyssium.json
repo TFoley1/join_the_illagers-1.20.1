@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_raw_abyssium": {
+    "has_abyssium": {
       "conditions": {
         "items": [
           {
             "items": [
-              "join_the_illagers:raw_abyssium"
+              "join_the_illagers:abyssium"
             ]
           }
         ]
@@ -15,14 +15,14 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:abyssium_ingot_from_blasting_raw_abyssium"
+        "recipe": "minecraft:abyssium_ingot_from_blasting_abyssium"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_raw_abyssium",
+      "has_abyssium",
       "has_the_recipe"
     ]
   ],

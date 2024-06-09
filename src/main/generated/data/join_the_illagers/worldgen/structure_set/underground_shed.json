@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "join_the_illagers:underground_shed",
+      "weight": 10
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 20,
+    "separation": 15,
+    "salt": 374877185
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "join_the_illagers:villager_dungeon",
+      "weight": 10
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 14,
+    "separation": 6,
+    "salt": 407413919
+  }
+}

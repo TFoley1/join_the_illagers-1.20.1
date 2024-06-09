@@ -1,0 +1,15 @@
+{
+  "name":"join_the_illagers:underground_hideout",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 4,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "join_the_illagers:underground_hideout",
+        "projection": "rigid",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}
