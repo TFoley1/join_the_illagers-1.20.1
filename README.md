@@ -21,7 +21,7 @@ I have used some textures from [Malcom Riley](https://github.com/malcolmriley) h
 
 - - - -
 
-I have also used the Ruby Armor Textures and recolored them from [Kaupenjoe's Modding Tutorial](https://github.com/Tutorials-By-Kaupenjoe/Fabric-Tutorial-1.20.X/tree/main). 
+I have also used the Ruby Armor Textures and recolored them from [Kaupenjoe's Modding Tutorial](https://github.com/Tutorials-By-Kaupenjoe/Fabric-Tutorial-1.20.X/tree/main). The content used is under the MIT license which allows you to use, copy, or edit the content with proper credit given. Here I am editing content and giving proper credit.
 
 You can find the originals [here](https://github.com/Tutorials-By-Kaupenjoe/Fabric-Tutorial-1.20.X/tree/main/src/main/resources/assets/tutorialmod/textures/models/armor). Please go check him out, that man is literally the reason this mod and many others exist. Tutorials are amazing.
 
