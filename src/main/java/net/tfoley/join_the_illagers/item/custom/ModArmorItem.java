@@ -2,6 +2,7 @@ package net.tfoley.join_the_illagers.item.custom;
 
 import com.google.common.collect.ImmutableMap;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
@@ -11,6 +12,8 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.tfoley.join_the_illagers.JoinTheIllagers;
+import net.tfoley.join_the_illagers.effect.ModEffects;
+import net.tfoley.join_the_illagers.effect.SoulBoundEffect;
 import net.tfoley.join_the_illagers.item.ModArmorMaterials;
 
 import java.util.Map;
@@ -18,7 +21,11 @@ import java.util.Map;
 public class ModArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
-                    .put(ModArmorMaterials.ABYSSIUM, new StatusEffectInstance(StatusEffects.SPEED, 400, 0, false, false, true))
+                    .put(ModArmorMaterials.ABYSSIUM, new StatusEffectInstance(ModEffects.SOULBOUND, 400, 0, false, false, true)).build();
+                    //.put(ModArmorMaterials.EMERALD, new StatusEffectInstance(StatusEffects.HERO_OF_THE_VILLAGE, 400, 0, false, false, true)).build();
+
+    private static final Map<ArmorMaterial, StatusEffectInstance> HELMET_MATERIAL_TO_EFFECT_MAP =
+            (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(ModArmorMaterials.EMERALD, new StatusEffectInstance(StatusEffects.HERO_OF_THE_VILLAGE, 400, 0, false, false, true)).build();
 
     public ModArmorItem(ArmorMaterial material, Type type, Settings settings) {
@@ -31,12 +38,14 @@ public class ModArmorItem extends ArmorItem {
             if (entity instanceof PlayerEntity player && hasFullSetOfArmorOn(player)) {
                 evaluateArmorEffects(player);
             }
-            if (entity instanceof PlayerEntity player && hasHelmetOn(player)) {
+            else if (entity instanceof PlayerEntity player && hasHelmetOn(player)) {
                 evaluateHelmetEffects(player);
             }
         }
         super.inventoryTick(stack, world, entity, slot, selected);
     }
+
+
 
     private void evaluateArmorEffects(PlayerEntity player) {
         for (Map.Entry<ArmorMaterial, StatusEffectInstance> entry : MATERIAL_TO_EFFECT_MAP.entrySet()) {
@@ -51,12 +60,12 @@ public class ModArmorItem extends ArmorItem {
 
     private void evaluateHelmetEffects(PlayerEntity player) {
         // JoinTheIllagers.LOGGER.info("EVALUATING HELM EFFECTS");
-        for (Map.Entry<ArmorMaterial, StatusEffectInstance> entry : MATERIAL_TO_EFFECT_MAP.entrySet()) {
+        for (Map.Entry<ArmorMaterial, StatusEffectInstance> entry : HELMET_MATERIAL_TO_EFFECT_MAP.entrySet()) {
             ArmorMaterial mapArmorMaterial = entry.getKey();
             StatusEffectInstance mapStatusEffect = entry.getValue();
 
             if (hasCorrectHelmetOn(mapArmorMaterial, player)) {
-                addStatusEffectForMaterial(player, mapArmorMaterial, mapStatusEffect);
+                addStatusEffectForMaterialHelmet(player, mapArmorMaterial, mapStatusEffect);
             }
         }
     }
@@ -67,6 +76,12 @@ public class ModArmorItem extends ArmorItem {
         if (hasCorrectArmorOn(mapArmorMaterial, player) && !hasPlayerEffect) {
             player.addStatusEffect(new StatusEffectInstance(mapStatusEffect));
         }
+    }
+
+
+    private void addStatusEffectForMaterialHelmet(PlayerEntity player, ArmorMaterial mapArmorMaterial, StatusEffectInstance mapStatusEffect) {
+        boolean hasPlayerEffect = player.hasStatusEffect(mapStatusEffect.getEffectType());
+
         if (hasCorrectHelmetOn(mapArmorMaterial, player) && !hasPlayerEffect) {
             player.addStatusEffect(new StatusEffectInstance(mapStatusEffect));
         }

@@ -3,6 +3,7 @@ package net.tfoley.join_the_illagers;
 import net.fabricmc.api.ModInitializer;
 
 import net.tfoley.join_the_illagers.block.ModBlocks;
+import net.tfoley.join_the_illagers.effect.ModEffects;
 import net.tfoley.join_the_illagers.item.ModItemGroups;
 import net.tfoley.join_the_illagers.item.ModItems;
 import net.tfoley.join_the_illagers.util.ModLootTableModifiers;
@@ -19,6 +20,8 @@ public class JoinTheIllagers implements ModInitializer {
 	public static File icon = new File("join_the_illagers/src/resources/assets/icon.png");
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
+
+
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
@@ -30,5 +33,8 @@ public class JoinTheIllagers implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		ModLootTableModifiers.modifyLootTables();
+		ModEffects.RegisterStatusEffects();
+
+
 	}
 }

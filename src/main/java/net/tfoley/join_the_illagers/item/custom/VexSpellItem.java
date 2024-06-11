@@ -1,38 +1,41 @@
 package net.tfoley.join_the_illagers.item.custom;
 
 import net.minecraft.client.item.TooltipContext;
+import net.minecraft.client.sound.Sound;
+import net.minecraft.command.CommandSource;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.SpawnReason;
+import net.minecraft.entity.*;
+import net.minecraft.entity.mob.MobEntity;
+import net.minecraft.entity.mob.VexEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.projectile.PersistentProjectileEntity;
 import net.minecraft.item.*;
+import net.minecraft.nbt.NbtCompound;
+import net.minecraft.particle.ParticleEffect;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
 import net.minecraft.text.Text;
+import net.minecraft.util.Hand;
+import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 import net.tfoley.join_the_illagers.JoinTheIllagers;
 import org.apache.logging.log4j.core.jmx.Server;
 import org.jetbrains.annotations.Nullable;
 
+
 import java.util.List;
 import java.util.Set;
 import java.util.function.Consumer;
+import java.util.function.Predicate;
 
-public class VexSpellItem extends BowItem { // new class with spell casting illager entity?
+public class VexSpellItem extends ShieldItem { // new class with spell casting illager entity?
     public VexSpellItem(Settings settings) {
         super(settings);
-    }
-
-    @Override
-    public UseAction getUseAction(ItemStack stack) {
-        return UseAction.TOOT_HORN;
     }
 
     @Override
@@ -42,54 +45,43 @@ public class VexSpellItem extends BowItem { // new class with spell casting illa
     }
 
     @Override
+    public UseAction getUseAction(ItemStack stack) {
+        return UseAction.BLOCK;
+    }
+
+    @Override
+    public int getMaxUseTime(ItemStack stack) {
+        return 72000;
+    }
+
+    @Override
     public boolean hasGlint(ItemStack stack) {
         return true;
     }
 
+    public void particleEffectSpawner(ServerWorld world, LivingEntity user){
+        world.spawnParticles(ParticleTypes.SOUL, user.getX(), (user.getY()) + 2.5, user.getZ(), 25, 0f, 0f, 0f, 0f);
+    }
+
     @Override
     public void onStoppedUsing(ItemStack stack, World world, LivingEntity user, int remainingUseTicks) {
-        boolean bl2;
-        int i;
-        float f;
-        if (!(user instanceof PlayerEntity)) {
-            return;
-        }
-        PlayerEntity playerEntity = (PlayerEntity)user;
-        boolean bl = playerEntity.getAbilities().creativeMode || EnchantmentHelper.getLevel(Enchantments.INFINITY, stack) > 0;
-        ItemStack itemStack = playerEntity.getProjectileType(stack);
-        if (itemStack.isEmpty() && !bl) {
-            return;
-        }
-        if (itemStack.isEmpty()) {
-            itemStack = new ItemStack(Items.ARROW);
-        }
-        if ((double)(f = BowItem.getPullProgress(i = this.getMaxUseTime(stack) - remainingUseTicks)) < 0.1) {
-            return;
-        }
-        boolean bl3 = bl2 = bl && itemStack.isOf(Items.ARROW);
+        // summon 1 vex
+        VexEntity ownedVex = ((EntityType<VexEntity>) EntityType.VEX).create(world);
+        //VexEntity.updatePosition(user.getX(), (user.getY()), user.getZ());
+        ownedVex.updatePosition(user.getX(), (user.getY()) + 3, user.getZ());
+        // ownedVex.setOwner((MobEntity) user); // change one line in a mixin to require LivingEntity?
+        world.spawnEntity(ownedVex);
         if (!world.isClient) {
-            int k;
-            int j;
-            ArrowItem arrowItem = (ArrowItem)(itemStack.getItem() instanceof ArrowItem ? itemStack.getItem() : Items.ARROW);
-            PersistentProjectileEntity persistentProjectileEntity = arrowItem.createArrow(world, itemStack, playerEntity);
-            persistentProjectileEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0f, f * 3.0f, 1.0f);
+            world.playSound(null, user.getBlockPos(), SoundEvents.ENTITY_EVOKER_CAST_SPELL, SoundCategory.PLAYERS, 1f, 1f);
+        }
 
-            stack.damage(1, playerEntity, p -> p.sendToolBreakStatus(playerEntity.getActiveHand()));
-            world.spawnEntity(persistentProjectileEntity);
-        }
-        world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_ARROW_SHOOT, SoundCategory.PLAYERS, 1.0f, 1.0f / (world.getRandom().nextFloat() * 0.4f + 1.2f) + f * 0.5f);
-        if (!bl2 && !playerEntity.getAbilities().creativeMode) {
-            itemStack.decrement(1);
-            if (itemStack.isEmpty()) {
-                playerEntity.getInventory().removeOne(itemStack);
-            }
-        }
-        playerEntity.incrementStat(Stats.USED.getOrCreateStat(this));
         super.onStoppedUsing(stack, world, user, remainingUseTicks);
     }
 
-
-
+    @Override
+    public EquipmentSlot getSlotType() {
+        return EquipmentSlot.OFFHAND;
+    }
 
 }
 

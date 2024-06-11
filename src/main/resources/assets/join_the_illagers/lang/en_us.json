@@ -54,5 +54,6 @@
   "join_the_illagers:advancements.emerald_crown.description": "Find an Emerald Crown",
   "join_the_illagers:advancements.crafted_evokation.description": "Craft an Evokation",
 
-  "itemgroup.illager": "Join The Illagers!"
+  "itemgroup.illager": "Join The Illagers!",
+  "effect.join_the_illagers.soulbound": "Soulbound"
 }
