@@ -43,8 +43,6 @@ public class ModItems {
     public static final Item ABYSSIUM_BOOTS= registerItem("abyssium_boots", new ModArmorItem(ModArmorMaterials.ABYSSIUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
     // TODO CHANGE STACK SIZE TO ONE
-    public static final Item PRISM = registerItem("prism",new Item(new FabricItemSettings().rarity(Rarity.EPIC).maxCount(1)));
-    public static final Item COPPERBOUND_PRISM = registerItem("copperbound_prism",new Item(new FabricItemSettings().rarity(Rarity.EPIC).maxCount(1)));
     public static final Item FANG_SPELL_ITEM = registerItem("fang_spell_item", new FangSpellItem(new FabricItemSettings().rarity(Rarity.EPIC).maxCount(1)));
     public static final Item VEX_SPELL_ITEM = registerItem("vex_spell_item", new VexSpellItem(new FabricItemSettings().rarity(Rarity.EPIC).maxCount(1)));
     public static final Item EMERALD_CROWN = registerItem("emerald_crown", new ModArmorItem(ModArmorMaterials.EMERALD, ArmorItem.Type.HELMET,new FabricItemSettings()));

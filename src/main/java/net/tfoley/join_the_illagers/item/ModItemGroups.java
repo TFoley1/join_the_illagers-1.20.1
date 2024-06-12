@@ -16,7 +16,7 @@ public class ModItemGroups extends ItemGroups {
     public static final ItemGroup ILLAGER_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(JoinTheIllagers.MOD_ID, "illager"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.illager"))
-                    .icon(()-> new ItemStack(ModBlocks.ABYSSIUM)).entries((displayContext, entries) -> {
+                    .icon(()-> new ItemStack(ModItems.FANG_SPELL_ITEM)).entries((displayContext, entries) -> {
 
                         entries.add(ModBlocks.ABYSSIUM);
                         entries.add(ModBlocks.LOOT_BLOCK);
@@ -37,8 +37,6 @@ public class ModItemGroups extends ItemGroups {
                         entries.add(ModItems.ABYSSIUM_BOOTS);
                         entries.add(ModItems.EMERALD_CROWN);
 
-                        entries.add(ModItems.PRISM);
-                        entries.add(ModItems.COPPERBOUND_PRISM);
                         entries.add(ModItems.VEX_SPELL_ITEM);
                         entries.add(ModItems.FANG_SPELL_ITEM);
                         entries.add(ModItems.SOUL);

@@ -5,8 +5,6 @@
   "item.join_the_illagers.abyssium_block": "Abyssium Block",
   "item.join_the_illagers.abyssium": "Abyssium",
   "item.join_the_illagers.abyssium_upgrade_template": "Smithing Template",
-  "item.join_the_illagers.prism": "Prism",
-  "item.join_the_illagers.copperbound_prism": "Copper Bound Prism",
   "item.join_the_illagers.fang_spell_item": "Fang Evokation",
   "item.join_the_illagers.vex_spell_item": "Vex Evokation",
   "item.join_the_illagers.sweet_berry_pie": "Sweet Berry Pie",
@@ -26,7 +24,6 @@
 
   "block.join_the_illagers.abyssium_block": "Abyssium",
   "block.join_the_illagers.loot_block": "Loot Block",
-
 
   "tooltip.join_the_illagers.fang_spell.tooltip": "Allows you to use the Evoker's fang spell",
   "tooltip.join_the_illagers.abyssium_smithing_template.tooltip": "Use this on Diamond Equipment...",

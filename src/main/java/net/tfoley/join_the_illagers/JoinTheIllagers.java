@@ -2,6 +2,13 @@ package net.tfoley.join_the_illagers;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
+import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.util.Identifier;
+import net.minecraft.world.gen.GenerationStep;
+import net.minecraft.world.gen.feature.PlacedFeature;
 import net.tfoley.join_the_illagers.block.ModBlocks;
 import net.tfoley.join_the_illagers.effect.ModEffects;
 import net.tfoley.join_the_illagers.item.ModItemGroups;

@@ -7,7 +7,7 @@ import net.minecraft.recipe.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    ABYSSIUM(MiningLevels.NETHERITE, 1856, 4.5f,3.25f,26,() ->Ingredient.ofItems(ModItems.ABYSSIUM_INGOT) );
+    ABYSSIUM(MiningLevels.NETHERITE, 1856, 8.7f,3.25f,26,() ->Ingredient.ofItems(ModItems.ABYSSIUM_INGOT) );
     private final int miningLevel;
     private final int itemDurability;
     private final float miningSpeed;

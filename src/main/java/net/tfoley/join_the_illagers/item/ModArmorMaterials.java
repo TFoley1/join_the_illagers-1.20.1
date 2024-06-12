@@ -13,10 +13,10 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
     ABYSSIUM("abyssium",23, new int[] {3,8,6,4},19, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,2f,
-            0.1f,() -> Ingredient.ofItems(ModItems.ABYSSIUM_INGOT)),
+            0.0f,() -> Ingredient.ofItems(ModItems.ABYSSIUM_INGOT)),
 
     EMERALD("emerald",23, new int[] {3,8,6,4},19, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,2f,
-            0.1f,() -> Ingredient.ofItems(Items.EMERALD));
+            0.0f,() -> Ingredient.ofItems(Items.EMERALD));
 
     private final String name;
     private final int durabilityMultiplier;

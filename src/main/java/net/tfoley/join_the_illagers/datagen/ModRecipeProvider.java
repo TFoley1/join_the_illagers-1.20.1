@@ -74,16 +74,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.FANG_SPELL_ITEM)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.COPPERBOUND_PRISM,1)
-                .pattern(" C ")
-                .pattern("CPC")
-                .pattern(" C ")
-                .input('C', Items.COPPER_INGOT)
-                .input('P', ModItems.PRISM)
-                .criterion(hasItem(Items.COPPER_INGOT), conditionsFromItem(Items.COPPER_INGOT))
-                .criterion(hasItem(ModItems.PRISM), conditionsFromItem(ModItems.PRISM))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.COPPERBOUND_PRISM)));
-
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD,ModItems.SWEET_BERRY_PIE,1)
                 .pattern("BSE")
                 .input('B', Items.SWEET_BERRIES)

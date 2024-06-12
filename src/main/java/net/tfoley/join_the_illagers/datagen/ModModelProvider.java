@@ -36,9 +36,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ABYSSIUM_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ABYSSIUM_HOE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SWEET_BERRY_PIE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.PRISM, Models.HANDHELD);
 
-        itemModelGenerator.register(ModItems.COPPERBOUND_PRISM, Models.GENERATED);
         itemModelGenerator.register(ModItems.FANG_SPELL_ITEM, Models.GENERATED);
         itemModelGenerator.register(ModItems.VEX_SPELL_ITEM, Models.GENERATED);
         itemModelGenerator.register(ModItems.HONEY_GLAZED_CHICKEN, Models.GENERATED);

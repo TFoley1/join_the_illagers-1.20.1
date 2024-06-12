@@ -8,6 +8,8 @@
 - [ ] Custom Mob
 - [ ] New Abyssium Armor and Weapon Textures
 - [ ] Add a ton of tooltips to mimic vanilla mc
+- [ ] Fix Data Generation
+- [ ] Create Passive Vex Owned By Player
 
 Learn how to add:
 - [ ] [Enchantments](https://fabricmc.net/wiki/tutorial:enchantments)

@@ -115,17 +115,6 @@ public class ModLootTableModifiers {
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(.2f)) // Drops 80% of the time
                         .with(ItemEntry.builder(ModItems.EMERALD_CROWN))
-                        .with(ItemEntry.builder(ModItems.PRISM))
-                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
-
-                tableBuilder.pool(poolBuilder.build());
-            }
-
-            if(ANCIENT_CITY_ID.equals(id)) {
-                LootPool.Builder poolBuilder = LootPool.builder()
-                        .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(.5f)) // Drops 80% of the time
-                        .with(ItemEntry.builder(ModItems.PRISM))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());
@@ -142,31 +131,11 @@ public class ModLootTableModifiers {
                 tableBuilder.pool(poolBuilder.build());
             }
 
-            if(ABANDONED_MINESHAFT_ID.equals(id)) {
-                LootPool.Builder poolBuilder = LootPool.builder()
-                        .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(.5f)) // Drops 80% of the time
-                        .with(ItemEntry.builder(ModItems.PRISM))
-                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
-
-                tableBuilder.pool(poolBuilder.build());
-            }
-
             if(ARMORER_ID.equals(id)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(.5f)) // Drops 80% of the time
                         .with(ItemEntry.builder(ModItems.EMERALD_CROWN))
-                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
-
-                tableBuilder.pool(poolBuilder.build());
-            }
-
-            if(ARMORER_CHEST_ID.equals(id)) {
-                LootPool.Builder poolBuilder = LootPool.builder()
-                        .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(.2f)) // Drops 80% of the time
-                        .with(ItemEntry.builder(ModItems.PRISM))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());
