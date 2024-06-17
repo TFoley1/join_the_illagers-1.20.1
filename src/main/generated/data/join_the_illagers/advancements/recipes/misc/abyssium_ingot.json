@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:abyssium_ingot"
+        "recipe": "join_the_illagers:abyssium_ingot"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:abyssium_ingot"
+      "join_the_illagers:abyssium_ingot"
     ]
   },
   "sends_telemetry_event": false

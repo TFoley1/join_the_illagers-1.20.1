@@ -13,13 +13,14 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_the_recipe": {
       "conditions": {
         "recipe": "minecraft:abyssium_nugget"
       },
       "trigger": "minecraft:recipe_unlocked"
-    }
-  },
+    },
   "requirements": [
     [
       "has_abyssium_ingot",
@@ -28,7 +29,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:abyssium_nugget"
+      "join_the_illagers:abyssium_nugget"
     ]
   },
   "sends_telemetry_event": false

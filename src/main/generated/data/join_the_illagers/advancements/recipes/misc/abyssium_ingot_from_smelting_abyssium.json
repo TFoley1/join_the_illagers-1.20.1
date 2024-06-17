@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:abyssium_ingot_from_smelting_raw_abyssium"
+      "join_the_illagers:abyssium_ingot_from_blasting_raw_abyssium"
     ]
   },
   "sends_telemetry_event": false

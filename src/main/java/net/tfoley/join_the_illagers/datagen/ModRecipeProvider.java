@@ -77,7 +77,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD,ModItems.SWEET_BERRY_PIE,1)
                 .pattern("BSE")
                 .input('B', Items.SWEET_BERRIES)
-                .input('S', Items.SUGAR)
+                .input('W', Items.WHEAT)
                 .input('E', Items.EGG)
                 .criterion(hasItem(Items.SWEET_BERRIES), conditionsFromItem(Items.SWEET_BERRIES))
                 .criterion(hasItem(Items.SUGAR), conditionsFromItem(Items.SUGAR))

@@ -28,7 +28,8 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:abyssium_from_abyssium_ingot"
+      "minecraft:abyssium_block_from_abyssium_ingot",
+      "abyssium_ingot_from_abyssium_nugget.json"
     ]
   },
   "sends_telemetry_event": false

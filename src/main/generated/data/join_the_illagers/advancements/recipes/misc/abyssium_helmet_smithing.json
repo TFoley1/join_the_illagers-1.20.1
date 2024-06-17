@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_netherite_ingot": {
+    "has_abyssium_ingot": {
       "conditions": {
         "items": [
           {
@@ -22,13 +22,13 @@
   },
   "requirements": [
     [
-      "has_netherite_ingot",
+      "has_abyssium_ingot",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:abyssium_helmet_smithing"
+      "join_the_illagers:abyssium_helmet_smithing"
     ]
   },
   "sends_telemetry_event": false

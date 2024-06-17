@@ -41,7 +41,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:fang_spell_item"
+      "join_the_illagers:fang_spell_item"
     ]
   },
   "sends_telemetry_event": false

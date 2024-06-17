@@ -22,8 +22,7 @@
   },
   "requirements": [
     [
-      "has_abyssium_upgrade_template",
-      "has_the_recipe"
+      "has_abyssium_upgrade_template"
     ]
   ],
   "rewards": {

@@ -8,12 +8,12 @@
     "E": {
       "item": "minecraft:egg"
     },
-    "S": {
-      "item": "minecraft:sugar"
+    "W": {
+      "item": "minecraft:wheat"
     }
   },
   "pattern": [
-    "BSE"
+    "BWE"
   ],
   "result": {
     "item": "join_the_illagers:sweet_berry_pie"
