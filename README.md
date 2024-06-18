@@ -27,9 +27,9 @@ ruby layer two - ![ruby layer two](https://raw.githubusercontent.com/Tutorials-B
 
 Editied Abyssium Layers:
 
-abyssium layer one - ![abyssium layer one](https://raw.githubusercontent.com/TFoley1/join_the_illagers-1.20.1/master/src/main/resources/assets/join_the_illagers/textures/models/armor/abyssium_layer_1.png)
+abyssium layer one - ![abyssium layer one](https://raw.githubusercontent.com/TFoley1/join_the_illagers-1.20.1/dev/src/main/resources/assets/join_the_illagers/textures/models/armor/abyssium_layer_1.png)
 
-abyssium layer two - ![abyssium layer two](https://raw.githubusercontent.com/TFoley1/join_the_illagers-1.20.1/master/src/main/resources/assets/join_the_illagers/textures/models/armor/abyssium_layer_2.png)
+abyssium layer two - ![abyssium layer two](https://raw.githubusercontent.com/TFoley1/join_the_illagers-1.20.1/dev/src/main/resources/assets/join_the_illagers/textures/models/armor/abyssium_layer_2.png)
 
 W.I.P.
 
